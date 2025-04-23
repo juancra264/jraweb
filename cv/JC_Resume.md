@@ -1,4 +1,4 @@
-**Juan Ramirez**
+**JUAN RAMIREZ**
 
 Middleton, Wisconsin | <juancra264@hotmail.com> | +1 (608) 572-6995
 
@@ -14,7 +14,7 @@ IT professional with over 16 years of experience in designing, deploying, and op
 
 Emmir Roth USA | Stoughton, WI, United States
 
-Responsible for management, planning, renewal and operations the network infrastructure architecture for different cheese making locations and operation facilities. Developing and implement project like WAN/LAN resilency and NMS Plaftform 
+Responsible for managing, planning, renewing, and operating the network infrastructure architecture across various cheese-making locations and operational facilities. Develop and implement projects such as WAN/LAN resiliency and the NMS platform for lifecycle network operations.
 
 
 **Network Technical Lead** Nov 2020 - Dec 2023
