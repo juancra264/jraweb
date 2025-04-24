@@ -1,4 +1,4 @@
-**JUAN RAMIREZ**
+# ** JUAN RAMIREZ ** 
 
 Middleton, Wisconsin | <juancra264@hotmail.com> | +1 (608) 572-6995
 
@@ -6,7 +6,7 @@ Middleton, Wisconsin | <juancra264@hotmail.com> | +1 (608) 572-6995
 
 **ABOUT ME**
 
-IT professional with over 16 years of experience in designing, deploying, and operating IP networks and IT infrastructure solutions for large-scale enterprises. Proficient in data networking, security systems, project management, and infrastructure operations in both on-premises and cloud environments. A fast learner who adapts easily to change, with a consistent eagerness to learn and grow in the field. A devoted husband and proud father of two children.
+Seasoned IT professional in designing, deploying, and operating IP networks and IT infrastructure solutions for large-scale enterprises. Proficient in data networking, security systems, project management, and infrastructure operations in both on-premises and cloud environments. A fast learner who adapts easily to change, with a consistent eagerness to learn and grow in the field. A devoted husband and proud father of two children.
 
 **WORK EXPERIENCE**
 
