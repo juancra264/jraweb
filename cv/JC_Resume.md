@@ -25,6 +25,24 @@ Mercado Libre Colombia | Bogotá, Colombia | Nov 2020 - Dec 2023
 
 Responsible for planning and supporting the network infrastructure architecture for the largest e-commerce platform in Latin America. Act as the focal point and technical lead for operations in Argentina, Chile, Colombia, Mexico, and Brazil. Ensure seamless connectivity, operational continuity, and security, while defining technologies and solutions from multiple providers for both connectivity and security. Lead initiatives to integrate on-premise operations with multi-cloud services across all Mercado Libre regions.
 
+Primary objective was to ensure maximum uptime and optimal performance to support seamless shipping operations. We connected over 500 warehouses and facilities, ranging from large distribution centers of 150,000 square meters to “nano” sites of just 100 square meters, all integrated into the Mercado Libre digital ecosystem. This included critical business applications and services. While the target uptime was 99.998%, most sites consistently achieved 100% availability due to our highly redundant architecture.
+
+My team and I designed, deployed, and operated the entire solution, integrating a diverse set of vendors to deliver a robust, secure and scalable infrastructure. These vendors provided components such as uninterruptible power supplies (UPS), structured cabling, network switching, wireless access, firewalls, internet connectivity, and cloud integration.The shipping network spans five countries, and I served as the technical lead for Argentina, Colombia, and Chile, overseeing the implementation and operation of the connectivity solutions in these regions.
+
+Key Projects Led and Delivered:
+
+- Deployment of Large Fulfillment Centers: Led the network infrastructure setup for two major fulfillment facilities (100,000 m² and 50,000 m²), including the installation of over 500 wireless access points, 150 network switches, and 30 intermediate distribution frames (IDFs). Designed a highly redundant connectivity architecture for both internet and local services.
+
+- Network Configuration Standards: Developed and enforced standardized network switch configurations across multiple vendors, ensuring consistency, compliance, and ease of management.
+
+- Centralized Network & Security Management: Spearheaded the installation and integration of a multi-vendor management platform for LAN, WLAN, and firewall devices. Enabled centralized control, monitoring, and lifecycle management of network and security infrastructure.
+
+- Multi-Cloud Connectivity Redesign: Led the redesign and deployment of remote connectivity to a multi-cloud environment, providing high-availability, centralized, and private access to platforms such as AWS, GCP, Azure, and colocation data centers for all Latam Location.
+
+- Vendor-Agnostic Configuration Backup Platform: Designed, developed, and deployed a cloud-based configuration backup solution, fully integrated with the existing NetBox source of truth (SoT). The platform supports multiple vendors and automates backup, versioning, and recovery processes.
+
+- Nano Site Architecture: Engineered a cost-effective network architecture for small-scale sites, adapting enterprise-grade connectivity standards to locations as small as 10 m², while maintaining performance and user experience on a reduced budget.
+
 ### Technology Specialist
 
 BT Latam now Sencinet | Bogotá, Colombia | Apr 2017 - Nov 2020
