@@ -2,7 +2,7 @@
 
 Middleton, Wisconsin | <juancra264@hotmail.com> | +1 (608) 572-6995
 
-<https://juan.radutech.site/> | [linkedin.com/in/juancra264](https://www.linkedin.com/in/juancra264/) | [github.com/juancra264](https://github.com/juancra264)/
+<https://juan.ramdur.com/> | [linkedin.com/in/juancra264](https://www.linkedin.com/in/juancra264/) | [github.com/juancra264](https://github.com/juancra264)/
 
 ## ABOUT ME
 
