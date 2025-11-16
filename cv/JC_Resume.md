@@ -1,6 +1,6 @@
 # JUAN RAMIREZ 
 
-Middleton, Wisconsin | <jc@ramdur.com> | +1 6085726995
+Middleton, WI | <jc@ramdur.com> | +1 6085726995
 
 <https://juan.ramdur.com/> | [linkedin.com/in/juancra264](https://www.linkedin.com/in/juancra264/) | [github.com/juancra264](https://github.com/juancra264)/
 
