@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Juan Ramirez — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #12161c;
+    --accent: #10c694;
+    --text: #23282f;
+    --muted: #6b7280;
+    --border: #e3e6ea;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    font-size: 10.1pt;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+
+  /* Header band */
+  .header {
+    background: var(--navy);
+    color: #ffffff;
+    padding: 22px 46px 18px;
+  }
+  .header h1 {
+    margin: 0 0 2px;
+    font-size: 25pt;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+  }
+  .header .title {
+    color: var(--accent);
+    font-size: 11.3pt;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 11px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+  }
+  .contact-row .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9.3pt;
+    color: #d4d8dd;
+  }
+  .contact-row .item img,
+  .contact-row .item svg {
+    width: 13px;
+    height: 13px;
+    opacity: 0.9;
+    flex-shrink: 0;
+  }
+  .contact-row .item a { color: #d4d8dd; }
+
+  /* Body */
+  .body {
+    padding: 16px 46px 30px;
+  }
+
+  section { margin-bottom: 12px; break-inside: avoid-page; }
+  section:last-child { margin-bottom: 0; }
+  section:has(.job) { break-inside: auto; }
+
+  h2.section-title {
+    font-size: 10.1pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: var(--navy);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 3px;
+    margin: 0 0 8px;
+    break-after: avoid-page;
+  }
+
+  .summary { color: var(--text); margin: 0; }
+
+  /* Skills */
+  .skills-row {
+    display: flex;
+    margin-bottom: 6px;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .skills-row:last-child { margin-bottom: 0; }
+  .skills-row .label {
+    flex: 0 0 168px;
+    font-weight: 700;
+    font-size: 9.6pt;
+    color: var(--navy);
+  }
+  .skills-row .values {
+    color: var(--muted);
+    font-size: 9.8pt;
+  }
+
+  /* Experience */
+  .job {
+    margin-bottom: 11px;
+  }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    break-after: avoid;
+  }
+  .job-title {
+    font-weight: 700;
+    font-size: 11pt;
+    color: var(--navy);
+  }
+  .job-dates {
+    font-size: 9.2pt;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .job-company {
+    font-size: 9.8pt;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .job-intro {
+    margin: 2px 0 6px;
+    color: var(--text);
+  }
+  ul.bullets {
+    margin: 4px 0 0;
+    padding-left: 16px;
+  }
+  ul.bullets li {
+    margin-bottom: 3px;
+    padding-left: 2px;
+  }
+  ul.bullets li::marker {
+    color: var(--accent);
+  }
+
+  /* Education */
+  .edu-item { margin-bottom: 8px; break-inside: avoid-page; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-degree { font-weight: 700; color: var(--navy); font-size: 10.2pt; }
+  .edu-school { color: var(--muted); font-size: 9.6pt; }
+
+  /* Certifications */
+  .cert-list { list-style: none; margin: 0; padding: 0; }
+  .cert-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 9.8pt;
+  }
+  .cert-list li:last-child { border-bottom: none; }
+  .cert-list .cert-name { font-weight: 600; color: var(--navy); }
+  .cert-list .cert-link { color: var(--accent); font-size: 9pt; white-space: nowrap; }
+
+  .languages { color: var(--muted); font-size: 9.8pt; }
+  .languages strong { color: var(--navy); }
+
+  @page {
+    size: Letter;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Juan Ramirez</h1>
+    <div class="title">Network &amp; IT Infrastructure Engineer</div>
+    <div class="contact-row">
+      <span class="item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Middleton, WI, USA
+      </span>
+      <span class="item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:jc@ramdur.com">jc@ramdur.com</a>
+      </span>
+      <span class="item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +1 (608) 572-6995
+      </span>
+      <span class="item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <a href="https://juan.ramdur.com/">juan.ramdur.com</a>
+      </span>
+      <span class="item">
+        <img src="../icons/linkedin.svg" alt="">
+        <a href="https://www.linkedin.com/in/juancra264/">linkedin.com/in/juancra264</a>
+      </span>
+      <span class="item">
+        <img src="../icons/github.svg" alt="">
+        <a href="https://github.com/juancra264">github.com/juancra264</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <section>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary">IT infrastructure and networking professional with 12+ years of experience designing, deploying, and operating large-scale IP networks, security systems, and cloud environments for global enterprises. Proven track record leading multi-country technical teams, standardizing operations across hundreds of sites, and delivering resilient, secure, and scalable infrastructure. Adaptable fast learner with a strong focus on automation and continuous improvement.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skills-row">
+        <div class="label">Networking &amp; Security</div>
+        <div class="values">Switching, Routing, Firewall, Wireless, VPN, BGP, OSPF, Network Troubleshooting &amp; Maintenance</div>
+      </div>
+      <div class="skills-row">
+        <div class="label">Vendors &amp; Platforms</div>
+        <div class="values">Cisco, Aruba, Fortinet, Ruckus</div>
+      </div>
+      <div class="skills-row">
+        <div class="label">Cloud &amp; Automation</div>
+        <div class="values">AWS, Azure, Cloud Networking, Terraform, Ansible, Python, Network Automation, Scripting</div>
+      </div>
+      <div class="skills-row">
+        <div class="label">Monitoring &amp; Operations</div>
+        <div class="values">Zabbix, Grafana, SolarWinds, Logging &amp; Monitoring, Backups, System Upgrades, DNS, Server Management</div>
+      </div>
+      <div class="skills-row">
+        <div class="label">Leadership</div>
+        <div class="values">Project Management, Team Leadership, Communication, Problem Solving, Adaptability, Critical Thinking</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Network Administrator</div>
+          <div class="job-dates">Nov 2024 – Present</div>
+        </div>
+        <div class="job-company">Emmi Roth USA · Stoughton, WI, United States</div>
+        <ul class="bullets">
+          <li>Manage, plan, renew, and operate network infrastructure across multiple cheese-manufacturing and operational facilities.</li>
+          <li>Lead WAN/LAN resiliency initiatives to strengthen uptime and eliminate single points of failure.</li>
+          <li>Design and implement an NMS platform to support full lifecycle network operations, monitoring, and configuration management.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Network Technical Lead</div>
+          <div class="job-dates">Nov 2020 – Dec 2023</div>
+        </div>
+        <div class="job-company">Mercado Libre Colombia · Bogotá, Colombia</div>
+        <p class="job-intro">Led network infrastructure architecture, planning, and operations for the largest e-commerce platform in Latin America, serving as technical lead for Argentina, Chile, and Colombia while supporting operations in Mexico and Brazil.</p>
+        <ul class="bullets">
+          <li>Directed connectivity, security, and multi-cloud integration strategy across 500+ warehouses and facilities (10 m² "nano" sites to 150,000 m² distribution centers), achieving 100% uptime at most sites against a 99.998% SLA target.</li>
+          <li>Designed and deployed network infrastructure for two major fulfillment centers (100,000 m² and 50,000 m²), including 500+ wireless access points, 150 network switches, and 30 IDFs, using a highly redundant architecture.</li>
+          <li>Standardized multi-vendor network switch configurations, improving consistency, compliance, and operational efficiency region-wide.</li>
+          <li>Spearheaded a centralized LAN/WLAN/firewall management platform, enabling unified monitoring, control, and lifecycle management of network and security infrastructure.</li>
+          <li>Redesigned multi-cloud remote connectivity (AWS, GCP, Azure, colocation), providing centralized, high-availability, private access for all Latam operations.</li>
+          <li>Built a vendor-agnostic, cloud-based configuration backup platform integrated with NetBox (source of truth), automating backup, versioning, and recovery.</li>
+          <li>Engineered a cost-effective "nano site" network architecture for small-scale locations, maintaining enterprise-grade performance on a reduced budget.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Technology Specialist</div>
+          <div class="job-dates">Apr 2017 – Nov 2020</div>
+        </div>
+        <div class="job-company">BT Latam (now Sencinet) · Bogotá, Colombia</div>
+        <ul class="bullets">
+          <li>Managed infrastructure operations for Tier III/IV data centers in Colombia, focused on high-speed networking and colocation services.</li>
+          <li>Administered firewalls, physical/virtual servers, storage systems, operating systems, and DNS services supporting regional IT infrastructure.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Senior Network Engineer</div>
+          <div class="job-dates">Nov 2015 – Apr 2017</div>
+        </div>
+        <div class="job-company">RCN TV · Bogotá, Colombia</div>
+        <ul class="bullets">
+          <li>Managed IP infrastructure (networks, firewalls, servers, storage, and applications) supporting technical broadcasting operations for a leading Colombian TV network.</li>
+          <li>Led high-speed switching, IT/OT systems integration, and storage projects supporting video broadcasting, recording, and streaming services.</li>
+          <li>Implemented server and infrastructure virtualization to improve reliability and scalability of broadcast services.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Network Engineer</div>
+          <div class="job-dates">Jun 2012 – Oct 2015</div>
+        </div>
+        <div class="job-company">Fanalca S.A. · Cali, Colombia</div>
+        <ul class="bullets">
+          <li>Deployed and administered the data network platform (switches and routers) for Fanalca S.A. and affiliated companies.</li>
+          <li>Managed perimeter security, including firewalls, VPN concentrators, and content inspection systems.</li>
+          <li>Administered telephony systems supporting corporate operations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-item">
+        <div class="edu-degree">MSc Business for IT (MBIT), Computer Science</div>
+        <div class="edu-school">Universidad de los Andes, Bogotá, Colombia · Aug 2018 – Nov 2020</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Electronic Engineer</div>
+        <div class="edu-school">Pontificia Universidad Javeriana, Cali, Colombia · Jul 2002 – Mar 2009</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li><span class="cert-name">Aruba Certified Mobility – Associate (ACMA)</span><a class="cert-link" href="https://www.credly.com/badges/dcdd7c10-73cb-467d-aa85-07b38228f778/public_url">View credential</a></li>
+        <li><span class="cert-name">AWS Certified Solutions Architect – Associate</span><a class="cert-link" href="https://www.credly.com/badges/dd33bc29-922c-47cd-8f9f-bd95d3432d4a/public_url">View credential</a></li>
+        <li><span class="cert-name">AWS Certified Cloud Practitioner</span><a class="cert-link" href="https://www.credly.com/badges/b77c10f4-1949-4b02-9449-72128624e9a0/public_url">View credential</a></li>
+        <li><span class="cert-name">Ruckus ICX Implementer Accreditation</span><a class="cert-link" href="https://certifications.commscope.com/b6807f11-e611-4b31-ba72-38bf0df9d2cc">View credential</a></li>
+        <li><span class="cert-name">ITILv3 Foundation</span><a class="cert-link" href="https://github.com/juancra264/jraweb/blob/main/cv/cert_itilv3.pdf">View credential</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Languages</h2>
+      <div class="languages"><strong>Spanish</strong> — Native &nbsp;|&nbsp; <strong>English</strong> — Fluent / Professional Working Proficiency</div>
+    </section>
+
+  </div>
+
+</body>
+</html>

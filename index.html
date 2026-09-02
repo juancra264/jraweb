@@ -12,12 +12,21 @@
     gtag('config', 'G-NCPJDS8MR6');
   </script>
 
-  <!-- Page Infsormation
+  <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Juan Carlos Ramirez Angel</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Juan Ramirez | Electronic Engineer & IT Infrastructure Professional</title>
+  <meta name="description" content="Juan Carlos Ramirez Angel - Electronic Engineer and IT professional specialized in networking, security and cloud infrastructure. View my resume and connect with me.">
+  <meta name="author" content="Juan Carlos Ramirez Angel">
+
+  <!-- Open Graph / Social Preview
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Juan Ramirez | Electronic Engineer & IT Infrastructure Professional">
+  <meta property="og:description" content="Electronic Engineer and IT professional specialized in networking, security and cloud infrastructure.">
+  <meta property="og:image" content="https://juan.ramdur.com/images/JuanICO.png">
+  <meta property="og:url" content="https://juan.ramdur.com">
+  <meta name="twitter:card" content="summary">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,10 +41,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton-dark.css">
   <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/JuanICO.png">
+  <link rel="apple-touch-icon" href="images/JuanICO.png">
 
 </head>
 
@@ -46,70 +57,117 @@
   <div class="container">
     <div class="row">
       <div class="column" style="margin-top: 10%">
-        <!-- Your Image Here -->
-        <style>
-          img.avatar {
-            border: 2px solid white;
-            border-radius: 50%;
-          }
-
-          a.small {
-            background: #1DA1F2;
-            border-radius: 50px;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            height: 48px;
-            padding: 0 16px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 18px;
-            width: 300px;
-            font-weight: 600;
-            line-height: 48px;
-            letter-spacing: 0.5px;
-            background-color: transparent;
-            border-radius: 8px;
-            cursor: pointer;
-            box-sizing: border-box;
-          }
-
-          footer {
-            text-align: center;
-            padding: 3px;
-            color: white;
-            font-size: 12px;
-          }
-        </style>
-        <img src="images/JuanICO.png" srcset="images/JuanICO.png 2x" class="avatar">
-
-
-        <!-- Your Name -->
-        <h1>Juan Ramirez</h1>
-        <!-- Short Bio -->
-        <p>Hello! I am Juan Carlos Ramirez Angel. Electronic Engineer, IT professional, Husband & Dad. <br> <br>
-          Seasoned IT professional in designing, deploying, and operating IP networks and IT
-infrastructure solutions for large-scale enterprises. Proficient in data networking, security systems, project
-management, and infrastructure operations on-premises and cloud environments. A fast learner
-who adapts easily to change, with a consistent eagerness to learn and grow in the field. A devoted husband
-and proud father of two children.</p>
-        <a class="button button-kit" href="cv/JC_Resume.pdf" download="JC_Resume">Download my Resume</a>
-        <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->
-        <div>
-          <a class="small button-linkedin" href="https://www.linkedin.com/in/juancra264/"><img
-              class="icon" src="icons/linkedin.svg"></a>
-          <a class="small button-github" href="https://github.com/juancra264"><img class="icon"
-              src="icons/github.svg"></a>
-          <a class="small button-instagram" href="https://www.instagram.com/juanramirez7398/"><img class="icon"
-              src="icons/instagram.svg"></a>
-          <a class="small button-facebook" href="https://www.facebook.com/juan.c.ramirez.104418"><img class="icon"
-              src="icons/facebook.svg"></a>
+        <!-- Language selector -->
+        <div class="lang-toggle" role="group" aria-label="Language selector / Selector de idioma">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
         </div>
-        <br>
+
+        <!-- Avatar -->
+        <img src="images/JuanICO.png" srcset="images/JuanICO.png 2x" class="avatar" alt="Juan Carlos Ramirez Angel">
+
+        <!-- Name & Tagline -->
+        <h1>Juan Ramirez</h1>
+        <p class="tagline">
+          <span data-i18n-en>Electronic Engineer &middot; IT Infrastructure &amp; Networking</span>
+          <span data-i18n-es hidden>Ingeniero Electr&oacute;nico &middot; Infraestructura de TI y Redes</span>
+        </p>
+
+        <!-- Short Bio -->
+        <p class="bio">
+          <span data-i18n-en>Hello! I am Juan Carlos Ramirez Angel. Electronic Engineer, IT professional, Husband &amp; Dad. <br><br>
+            Seasoned IT professional in designing, deploying, and operating IP networks and IT
+            infrastructure solutions for large-scale enterprises. Proficient in data networking, security systems, project
+            management, and infrastructure operations on-premises and cloud environments. A fast learner
+            who adapts easily to change, with a consistent eagerness to learn and grow in the field. A devoted husband
+            and proud father of two children.</span>
+          <span data-i18n-es hidden>&iexcl;Hola! Soy Juan Carlos Ram&iacute;rez &Aacute;ngel. Ingeniero Electr&oacute;nico, profesional de TI, esposo y padre. <br><br>
+            Profesional de TI con experiencia en el dise&ntilde;o, despliegue y operaci&oacute;n de redes IP e
+            infraestructura de TI para grandes empresas. Con dominio en redes de datos, sistemas de seguridad, gesti&oacute;n de
+            proyectos y operaciones de infraestructura on-premises y en la nube. Aprendo r&aacute;pido y me adapto
+            f&aacute;cilmente al cambio, con constantes ganas de aprender y crecer en el campo. Esposo dedicado y
+            padre orgulloso de dos hijos.</span>
+        </p>
+
+        <p class="section-label">
+          <span data-i18n-en>Resume</span>
+          <span data-i18n-es hidden>Curr&iacute;culum</span>
+        </p>
+        <a class="button button-kit" id="resume-link" href="cv/JC_Resume.pdf" download="JC_Resume"
+           data-href-en="cv/JC_Resume.pdf" data-download-en="JC_Resume"
+           data-href-es="cv/CV_JuanRamirez_ES.pdf" data-download-es="CV_JuanRamirez">
+          <span data-i18n-en>Download my Resume</span>
+          <span data-i18n-es hidden>Descargar mi Curr&iacute;culum</span>
+        </a>
+
+        <p class="section-label">
+          <span data-i18n-en>Find me online</span>
+          <span data-i18n-es hidden>Encu&eacute;ntrame en l&iacute;nea</span>
+        </p>
+        <div>
+          <a class="small button-linkedin" href="https://www.linkedin.com/in/juancra264/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img
+              class="icon" src="icons/linkedin.svg" alt="LinkedIn"></a>
+          <a class="small button-github" href="https://github.com/juancra264" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img class="icon"
+              src="icons/github.svg" alt="GitHub"></a>
+          <a class="small button-instagram" href="https://www.instagram.com/juanramirez7398/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="icon"
+              src="icons/instagram.svg" alt="Instagram"></a>
+          <a class="small button-facebook" href="https://www.facebook.com/juan.c.ramirez.104418" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img class="icon"
+              src="icons/facebook.svg" alt="Facebook"></a>
+        </div>
+
+        <p class="section-label">
+          <span data-i18n-en>Get in touch</span>
+          <span data-i18n-es hidden>Cont&aacute;ctame</span>
+        </p>
         <a class="button button-medium" href="mailto:jc@ramdur.com"><img class="icon"
-            src="icons/mail.svg">Send me an Email!</a>
-        <footer>
-        </footer>
+            src="icons/mail.svg" alt="">
+          <span data-i18n-en>Send me an Email!</span>
+          <span data-i18n-es hidden>&iexcl;Env&iacute;ame un correo!</span>
+        </a>
+
+        <footer>&copy; <span id="year"></span> Juan Carlos Ramirez Angel</footer>
+
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+
+          (function () {
+            var buttons = document.querySelectorAll('.lang-btn');
+            var resumeLink = document.getElementById('resume-link');
+
+            function setLang(lang) {
+              document.documentElement.lang = lang;
+
+              document.querySelectorAll('[data-i18n-en]').forEach(function (el) {
+                el.hidden = lang !== 'en';
+              });
+              document.querySelectorAll('[data-i18n-es]').forEach(function (el) {
+                el.hidden = lang !== 'es';
+              });
+
+              buttons.forEach(function (btn) {
+                var active = btn.dataset.lang === lang;
+                btn.classList.toggle('active', active);
+                btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+              });
+
+              if (resumeLink) {
+                resumeLink.href = resumeLink.dataset['href' + (lang === 'en' ? 'En' : 'Es')];
+                resumeLink.setAttribute('download', resumeLink.dataset['download' + (lang === 'en' ? 'En' : 'Es')]);
+              }
+
+              try { localStorage.setItem('preferredLang', lang); } catch (e) {}
+            }
+
+            buttons.forEach(function (btn) {
+              btn.addEventListener('click', function () { setLang(btn.dataset.lang); });
+            });
+
+            var saved = null;
+            try { saved = localStorage.getItem('preferredLang'); } catch (e) {}
+            var browserLang = (navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en';
+            setLang(saved || browserLang);
+          })();
+        </script>
       </div>
     </div>
   </div>
