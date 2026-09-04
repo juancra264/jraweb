@@ -67,7 +67,7 @@ Led network infrastructure architecture, planning, and operations for the larges
 
 ## CERTIFICATIONS
 
-- ***Microsoft Certified: Azure Fundamentals* — [View credential](https://learn.microsoft.com/en-us/users/juanramirez/credentials/8e7c331de9b6e2c9)
+- **Microsoft Certified: Azure Fundamentals** — [View credential](https://learn.microsoft.com/en-us/users/juanramirez/credentials/8e7c331de9b6e2c9)
 - **Aruba Certified Mobility – Associate (ACMA)** — [View credential](https://www.credly.com/badges/dcdd7c10-73cb-467d-aa85-07b38228f778/public_url)
 - **AWS Certified Solutions Architect – Associate** — [View credential](https://www.credly.com/badges/dd33bc29-922c-47cd-8f9f-bd95d3432d4a/public_url)
 - **AWS Certified Cloud Practitioner** — [View credential](https://www.credly.com/badges/b77c10f4-1949-4b02-9449-72128624e9a0/public_url)
