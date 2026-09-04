@@ -12,7 +12,7 @@ IT infrastructure and networking professional with 12+ years of experience desig
 ## CORE SKILLS
 
 **Networking & Security:** Switching, Routing, Firewall, Wireless, VPN, BGP, OSPF, Network Troubleshooting & Maintenance
-**Vendors & Platforms:** Cisco, Aruba, Fortinet, Ruckus
+**Vendors & Platforms:** Cisco, Aruba, Fortinet, Ruckus, HPE
 **Cloud & Automation:** AWS, Azure, Cloud Networking, Terraform, Ansible, Python, Network Automation, Scripting
 **Monitoring & Operations:** Zabbix, Grafana, SolarWinds, Logging & Monitoring, Backups, System Upgrades, DNS, Server Management
 **Leadership:** Project Management, Team Leadership, Communication, Problem Solving, Adaptability, Critical Thinking
@@ -67,6 +67,7 @@ Led network infrastructure architecture, planning, and operations for the larges
 
 ## CERTIFICATIONS
 
+- ***Microsoft Certified: Azure Fundamentals* — [View credential](https://learn.microsoft.com/en-us/users/juanramirez/credentials/8e7c331de9b6e2c9)
 - **Aruba Certified Mobility – Associate (ACMA)** — [View credential](https://www.credly.com/badges/dcdd7c10-73cb-467d-aa85-07b38228f778/public_url)
 - **AWS Certified Solutions Architect – Associate** — [View credential](https://www.credly.com/badges/dd33bc29-922c-47cd-8f9f-bd95d3432d4a/public_url)
 - **AWS Certified Cloud Practitioner** — [View credential](https://www.credly.com/badges/b77c10f4-1949-4b02-9449-72128624e9a0/public_url)
